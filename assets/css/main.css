@@ -27,7 +27,11 @@ a{
     top: 0; left: 0;
 }
 .compagny_name{
-
+    padding-top: 50px;
+    padding-left: 50px;
+}
+.compagny_name > img{
+    width: 210px;
 }
 
 .nav_menu{
