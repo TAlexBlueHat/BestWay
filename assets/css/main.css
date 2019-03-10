@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700|Open+Sans:400,700'); 
- 
+body, p, ul, li, a{margin: 0; padding: 0}
 *{ 
     font-family: 'Open Sans Condensed', sans-serif; 
     font-size: 1.2rem; 
@@ -18,9 +18,13 @@ a{
 }
 */
 .header{
+    display: block;
 	background:linear-gradient(to left, rgba(255, 255, 255, 0) 30%,  rgba(76, 9, 223, 0.93)) 0 0 no-repeat, url(../img/header_img.jpg) 100% 0% no-repeat;
-	width: 100%;
-	height: 840px;
+    background-size: cover;
+    min-width: 100%;
+    height: 840px;
+    position: relative;
+    top: 0; left: 0;
 }
 .compagny_name{
 
@@ -31,56 +35,54 @@ a{
 }
 
 .attractive_text{
-
+    display: block;
+    width: 450px;
+    height: 175px;
+    position: absolute;
+    bottom: 400px;
+    left: 45px;
 }
 
 .head_text{
-
+    font-family: 'Open Sans', Courier, monospace;
+    color: #fff;
+    font-weight: bolder;
+    font-size: 2rem;
+    text-transform: uppercase;
 }
 
 .slogan_text{
-
+    font-family: 'Open Sans', Courier, monospace;
+    color: #f39c12;
+    font-style: italic;
+    font-size: .8rem;
 }
 
 .buttons_info{
-
-}
-
-.buttons{
-
-}
-
-.button_outline{
-
+    display: block;
+    width: 450px;
+    height: 75px;
+    line-height: 75px;
+    position: absolute;
+    bottom: 250px;
+    left: 45px;
 }
 
 .button{ 
     display: inline-block; 
     position: relative; 
-    padding: 1.2%; 
+    padding: 3.2%; 
     width: auto; 
     height: 12px; 
     line-height: 12px; 
     border-radius: 6.5px; 
     font-weight: 700; 
-    text-align: center; 
-    color: inherit; 
+    text-align: center;
 } 
  
 .button_outline{     
     border-width: 2.3px; 
     border-style: solid; 
-} 
- 
-.button_green{ 
-    border-color: #27ae60; 
-    color: #27ae60; 
-} 
- 
-.button_green:hover{ 
-    background-color: #27ae60; 
-    border-color: #fff; 
-    color: #fff;; 
 } 
  
 .button_blue{ 
@@ -94,15 +96,17 @@ a{
     color: rgba(76, 9, 223, 0.93); 
     transition: background .8s; 
     transition: border .8s 
+}
+
+.button_orange{ 
+    border-color: #f39c12; 
+    color: #f39c12; 
 } 
  
-.button_graymid{ 
-    border-color: #2c3e50; 
-    color: #2c3e50; 
-} 
- 
-.button_graymid:hover{ 
-    background-color: #2c3e50; 
-    border-color: #fff; 
-    color: #fff;; 
+.button_orange:hover{ 
+    border-color: #f39c12; 
+    background: #f39c12;
+    color: #fff; 
+    transition: background .8s; 
+    transition: border .8s 
 }
